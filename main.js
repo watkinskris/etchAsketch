@@ -1,5 +1,10 @@
 function getGridSize(){
-    var x = prompt('How big would you like the drawing area to be: ')
+    var x = prompt('How big would you like the drawing area to be: ');
+
+    while (x < 1) {
+        alert('That is an invalid entry.  Please try again');
+        x = prompt('How big would you like the drawing area to be: ');
+    }
 
     gridSetUp(x, x);
 }
