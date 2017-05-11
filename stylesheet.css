@@ -1,9 +1,13 @@
+table{
+    margin: 50px auto;
+}
 td {
     border: 1px solid black;
     text-align:center;
     vertical-align: middle;
-    width:20;
-    height:20;
+    width:20px;
+    height:20px;
+    padding: 20px;
 }
 
 table{

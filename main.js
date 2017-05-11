@@ -1,6 +1,6 @@
-function gridSetUp (x, y) {
-    var rows = x;
-    var cols = y;
+function gridSetUp () {
+    var rows = 10;
+    var cols = 10;
     var html ="";
 
     for (var i = 0; i < rows; i++){
@@ -13,5 +13,5 @@ function gridSetUp (x, y) {
         html += '</tr>';
     }
 
-    document.getElementById('sketchPad').innerHTML += html
+    document.getElementById('sketchPad').innerHTML += html;
 }
