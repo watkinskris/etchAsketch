@@ -1,7 +1,11 @@
+body{
+    background: #dcdcdc;
+}
 .sketchPad{
     position:relative;
     margin: 40px auto;
     display: table;
+    background: white;
 
 }
 .column{
@@ -9,4 +13,25 @@
     width:30px;
     height:30px;
     float:left;
+}
+
+.menu{
+    text-align: center;
+}
+
+.buttonMenu{
+    list-style: none;
+}
+
+.buttonMenu li{
+    display:inline;
+    margin-right: 10px;
+}
+
+button {
+    width:120px;
+    height:30px;
+    border-radius: 5px;
+    border:2px inset black;
+    background:#b0c4de;
 }
