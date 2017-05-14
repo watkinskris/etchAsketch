@@ -1,18 +1,12 @@
-table{
-    margin: 50px auto;
-    
-}
+.sketchPad{
+    position:relative;
+    margin: 40px auto;
+    display: table;
 
-td {
-    border: 1px solid black;
-    text-align:center;
-    vertical-align: middle;
-    width:20px;
-    height:20px;
-    padding: 20px;
 }
-
-table{
-    border-spacing: 0;
-    border-collapse: collapse;
+.column{
+    border:2px solid black;
+    width:30px;
+    height:30px;
+    float:left;
 }
