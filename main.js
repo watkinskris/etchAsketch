@@ -1,28 +1,39 @@
-function getGridSize(){
-    var x = prompt('How big would you like the drawing area to be: ');
+$(document).ready(function () {
 
-    while (x < 1) {
-        alert('That is an invalid entry.  Please try again');
-        x = prompt('How big would you like the drawing area to be: ');
+    function gridSetup(v){
+        
+        var numOfSquares = v;
+    
+        var etchAsketch = $('.sketchPad');
+    
+        for(var i = 0; i < numOfSquares ; i++){
+            var row = $('<div class = "row"></div>');
+
+            etchAsketch.append(row);
+        }
+      
+        for(var j = 0; j < numOfSquares; j++){
+            column = $('<div class = "column"></div>');
+
+            $('.row').append(column);
+        }
+      
     }
 
-    gridSetUp(x, x);
-}
+    gridSetup(16);
 
-function gridSetUp (x, y) {
-    var rows = x;
-    var cols = y;
-    var html ="";
 
-    for (var i = 0; i < rows; i++){
-        html += '<tr>';
+    function getGridSize(){
+        var size = prompt('The etch-A-sketch may have between 1 and 100 squares per side.  How many squares per side would you like your etch-A-sketch to have?');
 
-        for (var j = 0; j < cols; j++){
-            html += '<td>' + '</td>';
+        while (x < 1 || x > 100) {
+            alert('That is an invalid entry.  Please try again');
+            x = prompt('The etch-A-sketch may have between 1 and 100 squares per side.  How many squares per side would you like your etch-A-sketch to have?');
         }
 
-        html += '</tr>';
+        gridSetup(size);
     }
 
-    document.getElementById('sketchPad').innerHTML += html;
-}
+    
+
+});
