@@ -7,12 +7,14 @@ body{
     display: table;
     background: white;
 
+
 }
+
 .column{
-    border:2px solid black;
-    width:30px;
-    height:30px;
-    float:left;
+    height: 40px;
+    width: 40px;
+    border:1px solid black;
+    float: left;
 }
 
 .menu{
